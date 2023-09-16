@@ -13,12 +13,12 @@ class BaseModel:
     def __init__(self, *args, **kwargs):
         """Instantiation of base model class
         Args:
-            args: it won't be used
-            kwargs: arguments for the constructor of the BaseModel
+            args: unsed args
+            kwargs: constructor args for basemodel
         Attributes:
-            id: unique id generated
-            created_at: creation date
-            updated_at: updated date
+            id: generate uuid
+            created_at: current date and time
+            updated_at: updated date and time
         """
         if kwargs:
             for key, value in kwargs.items():
