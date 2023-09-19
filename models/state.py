@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" State Module for HBNB project """
+"""This module contains the State class"""
 from sqlalchemy.ext.declarative import declarative_base
 from models.base_model import BaseModel, Base
 from sqlalchemy.orm import relationship
@@ -9,7 +9,7 @@ import shlex
 from models.city import City
 
 class State(BaseModel, Base):
-    """This class is for the State
+    """This is is the class for state
     """
     __tablename__ = "states"
     name = Column(String(128), nullable=False)

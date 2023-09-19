@@ -1,18 +1,14 @@
 #!/usr/bin/python3
-"""This is the city class"""
+"""This module conatins the city class"""
 from sqlalchemy.ext.declarative import declarative_base
-from models.base_model import BaseModel, Base
 from sqlalchemy import Column, Integer, String
-from sqlalchemy import ForeignKey
 from sqlalchemy.orm import relationship
 from models.place import Place
-
+from sqlalchemy import ForeignKey
+from models.base_model import BaseModel, Base
 
 class City(BaseModel, Base):
-    """This is the class for City
-    Attributes:
-        state_id: The state id
-        name: input name
+    """This class represents the City
     """
     __tablename__ = "cities"
     name = Column(String(128), nullable=False)
