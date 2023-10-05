@@ -5,7 +5,7 @@ from datetime import datetime
 from fabric.api import local
 
 def do_pack():
-	"""Create a tar gzipped archive of the directory web_static."""
+	"""This function ouses fabric to generate .tgz"""
 	date_time = datetime.utcnow()
 	files = "versions/web_static_{}{}{}{}{}{}.tgz".format(date_time.year,
                                                          date_time.month,
