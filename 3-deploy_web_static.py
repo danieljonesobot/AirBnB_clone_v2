@@ -5,7 +5,7 @@ A Fabric script, which builds upon the 2-do_deploy_web_static.py file, is design
 from datetime import datetime
 from fabric.api import env, local, put, run
 from os.path import exists, isdir
-env.hosts = ['18.209.179.241', '35.153.33.57']
+env.hosts = ['34.232.65.63', '52.201.163.252']
 
 
 def do_pack():
